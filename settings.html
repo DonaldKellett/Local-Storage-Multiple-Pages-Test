@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<!-- skel-baseline v2.0.3 | (c) n33 | getskel.com | MIT licensed -->
+<html>
+	<head>
+		<title>Local Storage Test (Multiple Pages) - Settings Page</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+	</head>
+	<body id="top">
+
+		<!-- Header -->
+			<header id="header" class="skel-layers-fixed">
+				<h1><a href="#">Baseline</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="settings.html">Settings</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Main -->
+			<div id="main" class="container">
+
+				<h2>Settings</h2>
+				<p>Finding this webpage too plain?  Alter the settings below to your own liking!  After you are satisfied, click "Save" and reload the page!</p>
+				<p><em style="font-size: 0.9em;">In order to save your settings, you must have Local Storage enabled.  Cookies are not required.</em></p>
+
+				<form>
+					<div class="12u$">
+						<p><input type="text" name="color" id="color" placeholder="Text Color" /></p>
+					</div>
+					<div class="12u$">
+						<p><input type="text" name="bgcolor" id="bgcolor" placeholder="Background Color" /></p>
+					</div>
+					<div class="12u$">
+						<p><input type="text" name="fontFamily" id="fontFamily" placeholder="Font" /></p>
+					</div>
+					<div class="12u$">
+						<p><a class="button" onclick="localStorage.clear(); var color = document.getElementById('color').value; var bgcolor = document.getElementById('bgcolor').value; var fontFamily = document.getElementById('fontFamily').value; localStorage.setItem('color', color); localStorage.setItem('bgcolor', bgcolor); localStorage.setItem('fontFamily', fontFamily);">Save</a></p>
+						<p><a class="button alt" onclick="localStorage.clear();">Default</a></p>
+					</div>
+				</form>
+
+								<form style="display: none;" method="post" action="#">
+									<div class="row uniform">
+										<div class="6u 12u$(xsmall)">
+											<input type="text" name="name" id="name" value="" placeholder="Name" />
+										</div>
+										<div class="6u$ 12u$(xsmall)">
+											<input type="email" name="email" id="email" value="" placeholder="Email" />
+										</div>
+										<!-- Break -->
+										<div class="12u$">
+											<div class="select-wrapper">
+												<select name="category" id="category">
+													<option value="">- Category -</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+										</div>
+										<!-- Break -->
+										<div class="4u 12u$(small)">
+											<input type="radio" id="priority-low" name="priority" checked>
+											<label for="priority-low">Low Priority</label>
+										</div>
+										<div class="4u 12u$(small)">
+											<input type="radio" id="priority-normal" name="priority">
+											<label for="priority-normal">Normal Priority</label>
+										</div>
+										<div class="4u$ 12u$(small)">
+											<input type="radio" id="priority-high" name="priority">
+											<label for="priority-high">High Priority</label>
+										</div>
+										<!-- Break -->
+										<div class="6u 12u$(small)">
+											<input type="checkbox" id="copy" name="copy">
+											<label for="copy">Email me a copy of this message</label>
+										</div>
+										<div class="6u$ 12u$(small)">
+											<input type="checkbox" id="human" name="human" checked>
+											<label for="human">I am a human and not a robot</label>
+										</div>
+										<!-- Break -->
+										<div class="12u$">
+											<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+										</div>
+										<!-- Break -->
+										<div class="12u$">
+											<ul class="actions">
+												<li><input type="submit" value="Send Message" /></li>
+												<li><input type="reset" value="Reset" class="alt" /></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<div class="row double">
+						<div class="6u 12u$(medium)">
+							<h2>Aliquam Interdum</h2>
+							<p>Ornare interdum nascetur enim lobortis nunc amet placerat pellentesque nascetur in adipiscing. Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc non. Mi accumsan. Justo aliquet massa adipiscing cubilia eu accumsan id. Arcu accumsan faucibus vis ultricies adipiscing ornare ut. Mi accumsan. Justo aliquet massa adipiscing cubilia eu accumsan id lorem ipsum dolor.</p>
+						</div>
+						<div class="3u 6u(medium) 12u$(small)">
+							<h3>Accumsan</h3>
+							<ul class="alt">
+								<li>Nascetur nunc varius commodo.</li>
+								<li>Vis id faucibus montes tempor</li>
+								<li>massa amet lobortis vel.</li>
+								<li>Nascetur nunc varius commodo.</li>
+							</ul>
+						</div>
+						<div class="3u$ 6u$(medium) 12u$(small)">
+							<h3>Faucibus</h3>
+							<ul class="alt">
+								<li>Nascetur nunc varius commodo.</li>
+								<li>Vis id faucibus montes tempor</li>
+								<li>massa amet lobortis vel.</li>
+								<li>Nascetur nunc varius commodo.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="copyright">
+					&copy; Untitled. All rights reserved.
+				</div>
+			</footer>
+
+			<script type="text/javascript">
+			document.getElementById('top').style.color = localStorage.getItem('color');
+			document.getElementById('top').style.background = localStorage.getItem('bgcolor');
+			document.getElementById('top').style.fontFamily = localStorage.getItem('fontFamily');
+			</script>
+
+	</body>
+</html>
