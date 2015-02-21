@@ -48,8 +48,8 @@
 						<p><input type="text" name="fontFamily" id="fontFamily" placeholder="Font" /></p>
 					</div>
 					<div class="12u$">
-						<p><a class="button" onclick="localStorage.clear(); var color = document.getElementById('color').value; var bgcolor = document.getElementById('bgcolor').value; var fontFamily = document.getElementById('fontFamily').value; localStorage.setItem('color', color); localStorage.setItem('bgcolor', bgcolor); localStorage.setItem('fontFamily', fontFamily);">Save</a></p>
-						<p><a class="button alt" onclick="localStorage.clear();">Default</a></p>
+						<p><a class="button" onclick="localStorage.clear(); var color = document.getElementById('color').value; var bgcolor = document.getElementById('bgcolor').value; var fontFamily = document.getElementById('fontFamily').value; localStorage.setItem('color', color); localStorage.setItem('bgcolor', bgcolor); localStorage.setItem('fontFamily', fontFamily); location.reload();">Save</a></p>
+						<p><a class="button alt" onclick="localStorage.clear(); location.reload();">Default</a></p>
 					</div>
 				</form>
 
